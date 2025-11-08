@@ -1,0 +1,212 @@
+# Simple Q&A Program with 3 Attempts
+
+# List of questions and answers
+qa_list = [
+    {"question": "What is the capital of Papua New Guinea?", "answer": "port moresby"},
+    {"question": "What is the capital of Fiji?", "answer": "suva"},
+    {"question": "What is the capital of Vanuatu?", "answer": "port vila"}
+]
+
+qa_list = [
+    # --- Capital Cities (40) ---
+    {"question": "What is the Capital City of Papua New Guinea?", "answer": "port moresby"},
+    {"question": "What is the Capital City of Fiji?", "answer": "suva"},
+    {"question": "What is the Capital City of Vanuatu?", "answer": "port vila"},
+    {"question": "What is the Capital City of Solomon Islands?", "answer": "honiara"},
+    {"question": "What is the Capital City of Australia?", "answer": "canberra"},
+    {"question": "What is the Capital City of New Zealand?", "answer": "wellington"},
+    {"question": "What is the Capital City of Japan?", "answer": "tokyo"},
+    {"question": "What is the Capital City of China?", "answer": "beijing"},
+    {"question": "What is the Capital City of Indonesia?", "answer": "jakarta"},
+    {"question": "What is the Capital City of India?", "answer": "new delhi"},
+    {"question": "What is the Capital City of Pakistan?", "answer": "islamabad"},
+    {"question": "What is the Capital City of Russia?", "answer": "moscow"},
+    {"question": "What is the Capital City of Brazil?", "answer": "brasilia"},
+    {"question": "What is the Capital City of USA?", "answer": "washington"},
+    {"question": "What is the Capital City of Canada?", "answer": "ottawa"},
+    {"question": "What is the Capital City of South Africa?", "answer": "pretoria"},
+    {"question": "What is the Capital City of Germany?", "answer": "berlin"},
+    {"question": "What is the Capital City of France?", "answer": "paris"},
+    {"question": "What is the Capital City of Spain?", "answer": "madrid"},
+    {"question": "What is the Capital City of Italy?", "answer": "rome"},
+    {"question": "What is the Capital City of Greece?", "answer": "athens"},
+    {"question": "What is the Capital City of Poland?", "answer": "warsaw"},
+    {"question": "What is the Capital City of Vietnam?", "answer": "hanoi"},
+    {"question": "What is the Capital City of Thailand?", "answer": "bangkok"},
+    {"question": "What is the Capital City of Philippines?", "answer": "manila"},
+    {"question": "What is the Capital City of Singapore?", "answer": "singapore"},
+    {"question": "What is the Capital City of South Korea?", "answer": "seoul"},
+    {"question": "What is the Capital City of North Korea?", "answer": "pyongyang"},
+    {"question": "What is the Capital City of Malaysia?", "answer": "kuala lumpur"},
+    {"question": "What is the Capital City of Argentina?", "answer": "buenos aires"},
+    {"question": "What is the Capital City of Mexico?", "answer": "mexico city"},
+    {"question": "What is the Capital City of Egypt?", "answer": "cairo"},
+    {"question": "What is the Capital City of Turkey?", "answer": "ankara"},
+    {"question": "What is the Capital City of Saudi Arabia?", "answer": "riyadh"},
+    {"question": "What is the Capital City of Iran?", "answer": "tehran"},
+    {"question": "What is the Capital City of Iraq?", "answer": "baghdad"},
+    {"question": "What is the Capital City of Afghanistan?", "answer": "kabul"},
+    {"question": "What is the Capital City of Israel?", "answer": "jerusalem"},
+    {"question": "What is the Capital City of Lebanon?", "answer": "beirut"},
+    {"question": "What is the Capital City of Syria?", "answer": "damascus"},
+
+    # --- Leaders: First Prime Ministers / Presidents (20) ---
+    {"question": "Who was Papua New Guinea's first Prime Minister?", "answer": "michael somare"},
+    {"question": "Who was the first President of the United States?", "answer": "george washington"},
+    {"question": "Who was the first Prime Minister of India?", "answer": "jawaharlal nehru"},
+    {"question": "Who was the first President of South Africa after apartheid?", "answer": "nelson mandela"},
+    {"question": "Who was the first Prime Minister of Australia?", "answer": "edmund barton"},
+    {"question": "Who was the first Prime Minister of United Kingdom?", "answer": "robert walpole"},
+    {"question": "Who was the first Prime Minister of Canada?", "answer": "john macdonald"},
+    {"question": "Who was the first Prime Minister of New Zealand?", "answer": "henry sewell"},
+    {"question": "Who was the first President of Indonesia?", "answer": "sukarno"},
+    {"question": "Who was the first President of China (1912)?", "answer": "sun yat sen"},
+    {"question": "Who was the first Prime Minister of Fiji?", "answer": "kamisese mara"},
+    {"question": "Who was the first President of Ghana?", "answer": "kwame nkrumah"},
+    {"question": "Who was the first President of Kenya?", "answer": "jomokenyatta"},
+    {"question": "Who was the first Prime Minister of Pakistan?", "answer": "liaquat ali khan"},
+    {"question": "Who was the first Chancellor of Germany?", "answer": "otto von bismarck"},
+    {"question": "Who was the first President of France?", "answer": "louis-napoleon bonaparte"},
+    {"question": "Who was the first Prime Minister of Singapore?", "answer": "lee kuan yew"},
+    {"question": "Who was the first President of the Philippines?", "answer": "emilio aguinaldo"},
+    {"question": "Who was the first Prime Minister of Malaysia?", "answer": "tunku abdul rahman"},
+    {"question": "Who was the first Emperor of Rome?", "answer": "augustus"},
+
+    # --- World’s Biggest, Tallest, Largest (20) ---
+    {"question": "What is the tallest mountain in the world?", "answer": "mount everest"},
+    {"question": "What is the largest ocean in the world?", "answer": "pacific ocean"},
+    {"question": "What is the largest desert in the world?", "answer": "sahara desert"},
+    {"question": "What is the busiest airport in the world by passengers?", "answer": "atlanta"},
+    {"question": "What is the largest country in the world by land area?", "answer": "russia"},
+    {"question": "What is the smallest country in the world?", "answer": "vatican city"},
+    {"question": "What is the largest continent in the world?", "answer": "asia"},
+    {"question": "What is the longest river in the world?", "answer": "nile"},
+    {"question": "What is the deepest ocean trench in the world?", "answer": "mariana trench"},
+    {"question": "What is the largest island in the world?", "answer": "greenland"},
+    {"question": "What is the largest lake in the world?", "answer": "caspian sea"},
+    {"question": "What is the most populated country in the world?", "answer": "china"},
+    {"question": "What is the most populated city in the world?", "answer": "tokyo"},
+    {"question": "What is the coldest continent in the world?", "answer": "antarctica"},
+    {"question": "What is the hottest desert in the world?", "answer": "sahara"},
+    {"question": "What is the largest rainforest in the world?", "answer": "amazon"},
+    {"question": "What is the tallest building in the world?", "answer": "burj khalifa"},
+    {"question": "What is the longest wall in the world?", "answer": "great wall of china"},
+    {"question": "What is the largest waterfall in the world?", "answer": "angel falls"},
+    {"question": "What is the largest bay in the world?", "answer": "bay of bengal"},
+
+    # --- Explorers & Discoverers (20) ---
+    {"question": "Who discovered America in 1492?", "answer": "christopher columbus"},
+    {"question": "Who discovered Australia for Britain in 1770?", "answer": "james cook"},
+    {"question": "Who was the first man to reach the South Pole in 1911?", "answer": "roald amundsen"},
+    {"question": "Who was the first man to reach the summit of Mount Everest in 1953?", "answer": "edmund hillary"},
+    {"question": "Who discovered the sea route to India in 1498?", "answer": "vasco da gama"},
+    {"question": "Who discovered the Pacific Ocean in 1513?", "answer": "vasco nunez de balboa"},
+    {"question": "Who led the first voyage around the world (1519)?", "answer": "ferdinand magellan"},
+    {"question": "Who discovered penicillin in 1928?", "answer": "alexander fleming"},
+    {"question": "Who was the first man on the moon in 1969?", "answer": "neil armstrong"},
+    {"question": "Who discovered the law of gravity in 1687?", "answer": "isaac newton"},
+    {"question": "Who discovered electricity with a kite experiment?", "answer": "benjamin franklin"},
+    {"question": "Who discovered relativity theory?", "answer": "albert einstein"},
+    {"question": "Who was the first woman to fly solo across the Atlantic?", "answer": "amelia earhart"},
+    {"question": "Who discovered Australia’s Great Barrier Reef?", "answer": "james cook"},
+    {"question": "Who discovered Antarctica in 1820?", "answer": "fabian gottlieb von bellingshausen"},
+    {"question": "Who was the first European to reach India by sea?", "answer": "vasco da gama"},
+    {"question": "Who discovered Hawaii for the Western world?", "answer": "james cook"},
+    {"question": "Who discovered oxygen in 1774?", "answer": "joseph priestley"},
+    {"question": "Who discovered radioactivity?", "answer": "henri becquerel"},
+    {"question": "Who discovered the circulation of blood?", "answer": "william harvey"},
+
+    # --- Memorable Events (20) ---
+    {"question": "In what year did World War 1 begin?", "answer": "1914"},
+    {"question": "In what year did World War 2 begin?", "answer": "1939"},
+    {"question": "Where did the Titanic sink in 1912?", "answer": "atlantic ocean"},
+    {"question": "What year did man first land on the moon?", "answer": "1969"},
+    {"question": "Where were the Olympic Games held in 2008?", "answer": "beijing"},
+    {"question": "Where were the Olympic Games held in 2016?", "answer": "rio de janeiro"},
+    {"question": "When did Papua New Guinea gain Independence?", "answer": "1975"},
+    {"question": "Which country hosted the FIFA World Cup in 2010?", "answer": "south africa"},
+    {"question": "When did the berlin wall fall?", "answer": "1989"},
+    {"question": "When was nelson mandela released from prison?", "answer": "1990"},
+    {"question": "Who was the Prime Minister of England in 1942?", "answer": "winston churchill"},
+    {"question": "What was the name of Nazi ruthless leader who started World War 2?", "answer": "adolf hitler"},
+    {"question": "Where can you find the eiffel tower?", "answer": "paris"},
+    {"question": "Which ancient country first introduced democracy?", "answer": "greece"},
+    {"question": "Which US President was assassinated in 1963?", "answer": "john f kennedy"},
+    {"question": "Where can you find Mount Vesuvius?", "answer": "italy"},
+    {"question": "USA was once a colony of which country?", "answer": "britain"},
+    {"question": "Bob Hawke was once a Prime Minister of which country?", "answer": "australia"},
+    {"question": "What is the name of the holiday that commemorates those who died in wars?", "answer": "remembrance day"},
+    {"question": "What are the names of the Japanese cities bombed in World War 2?", "answer": "hiroshima and nagasaki"},
+
+    # --- Inventions & Inventors (20) ---
+    {"question": "Who invented the telephone?", "answer": "alexander graham bell"},
+    {"question": "Who invented the light bulb?", "answer": "thomas edison"},
+    {"question": "Who invented the airplane?", "answer": "wright brothers"},
+    {"question": "Who invented the steam engine?", "answer": "james watt"},
+    {"question": "Who invented the printing press?", "answer": "johannes gutenberg"},
+    {"question": "Who invented dynamite?", "answer": "alfred nobel"},
+    {"question": "Who invented the world wide web?", "answer": "tim berners lee"},
+    {"question": "Who invented the first computer?", "answer": "charles babbage"},
+    {"question": "Who invented the theory of evolution?", "answer": "charles darwin"},
+    {"question": "Who invented the radio?", "answer": "guglielmo marconi"},
+    {"question": "Who invented the camera?", "answer": "joseph niepce"},
+    {"question": "Who invented the telescope?", "answer": "galileo galilei"},
+    {"question": "Who invented the automobile?", "answer": "karl benz"},
+    {"question": "Who invented the sewing machine?", "answer": "elias howe"},
+    {"question": "Who invented the telephone exchange?", "answer": "tivadar puskas"},
+    {"question": "Who invented the helicopter?", "answer": "igor sikorsky"},
+    {"question": "Who invented the phonograph?", "answer": "thomas edison"},
+    {"question": "Who invented basketball?", "answer": "james naismith"},
+    {"question": "Who invented the microscope?", "answer": "zacharias janssen"},
+    {"question": "Who invented the submarine?", "answer": "cornelis drebbel"},
+
+    # --- Papua New Guinea & Pacific Specific (20) ---
+    {"question": "Karkar Island can be found in what district of Madang Province in PNG?", "answer": "sumkar"},
+    {"question": "What mode of transport is suitable from Madang to Manus Province?", "answer": "plane"},
+    {"question": "What mode of transport is suitable for heavy cargo from Madang to Bougainville Province?", "answer": "ship"},
+    {"question": "What system of trading was used in Papua New Guinea before money?", "answer": "barter"},
+    {"question": "What is the monetary unit of Papua New Guinea?", "answer": "kina"},
+    {"question": "What is the monetary unit of Japan?", "answer": "yen"},
+    {"question": "What is the monetary unit of China?", "answer": "yuan"},
+    {"question": "What is the monetary unit of West Germany?", "answer": "deutsche mark"},
+    {"question": "What is the monetary unit of USA?", "answer": "dollar"},
+    {"question": "What is the monetary unit of Pakistan?", "answer": "rupee"},
+    {"question": "What is the monetary unit of Vietnam?", "answer": "dong"},
+    {"question": "What is the monetary unit of Russia?", "answer": "ruble"},
+    {"question": "What is the monetary unit of Poland?", "answer": "zloty"},
+    {"question": "What is the monetary unit of Spain?", "answer": "euro"},
+    {"question": "What is the monetary unit of Fiji?", "answer": "fiji dollar"},
+    {"question": "What is the monetary unit of Indonesia?", "answer": "rupiah"},
+    {"question": "What is the monetary unit of Solomon Islands?", "answer": "solomon dollar"},
+    {"question": "What is the monetary unit of Australia?", "answer": "australian dollar"},
+    {"question": "What is the monetary unit of Britain?", "answer": "pound"},
+    {"question": "What is the monetary unit of Brazil?", "answer": "real"},
+]
+
+
+
+
+# Loop through each question
+for qa in qa_list:
+    attempts = 0
+    correct = False
+
+    while attempts < 3:
+        # Ask the question
+        user_answer = input(qa["question"] + " ").strip().lower()
+        
+        if user_answer == qa["answer"]:
+            print("CORRECT ✅")
+            correct = True
+            break
+        else:
+            attempts += 1
+            if attempts < 3:
+                print("SORRY TRY AGAIN ❌")
+
+    # If not correct after 3 attempts
+    if not correct:
+        print("SORRY PLEASE TRY AGAIN ❌")
+        print("The correct answer is:", qa["answer"].title())
+
+    print("-" * 40)  # Separator before next question
